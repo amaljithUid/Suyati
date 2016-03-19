@@ -2911,7 +2911,8 @@ input.form-control, textarea.form-control {
 	padding: 78px 0 0;
 	margin: 0;
 	text-transform: uppercase;
-	text-shadow: 0 0 15px #000
+	text-shadow: 0 0 15px #000;
+	margin-top: 150px
 }
 .head-banner.advisory-board>h1 {
 	/*font-family: proxima_novasemibold;*/
