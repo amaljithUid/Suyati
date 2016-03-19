@@ -585,6 +585,9 @@ div.label-head {
 /*    microsite testimonial slider AJL   */
 /*---------------------------------------*/
 
+.banner-text{
+	position: relative;
+}
 
 .banner-block{
 	display: inline-block;
