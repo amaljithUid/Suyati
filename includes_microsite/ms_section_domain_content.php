@@ -19,26 +19,26 @@
 			print "</pre>";*/?>
 			<div class="twelve columns filter-wrapper">
 				<ul class="nav-bar-filter" id="nav-bar-filter">
-			<ul>
-				<?php 
-				foreach($domain as $key => $domains) { 
-				  $post_name = $domains->post_name;
-				  $post_title = $domains->post_title;
-                  $site_url = get_site_url();
-                  $microsite_url_full = $site_url.'/domain/'.$post_name;
-                ?>
+			
+					<?php 
+					foreach($domain as $key => $domains) { 
+					  $post_name = $domains->post_name;
+					  $post_title = $domains->post_title;
+	                  $site_url = get_site_url();
+	                  $microsite_url_full = $site_url.'/domain/'.$post_name;
+	                ?>
 
-				  <li data-id="<?php echo $post_name;?>" class="type-links type-links<?php echo $key.' '.$post_name;?>"><a href="<?php echo $microsite_url_full;?>"><?php echo $post_title;?></a></li>
-        		<?php }?>
+					  <li data-id="<?php echo $post_name;?>" class="type-links type-links<?php echo $key.' '.$post_name;?>"><a href="<?php echo $microsite_url_full;?>"><?php echo $post_title;?></a></li>
+	        		<?php }?>
 
-			</ul>
-			<ul id="more-nav">
-			        <li><b><a href="#">More &gt;</a></b>
-
-			            <ul class="subfilter"></ul>
-			        </li>
-			    </ul>
-
+				</ul>
+			<ul id="more-nav" class="hidden-lg">
+		        <li>
+			        <a href="#" class="more-btn-page"><i class="fa fa-ellipsis-v"></i></a>
+		            <ul class="subfilter"></ul>
+		        </li>
+		    </ul>
+            
 			</div>
 
 		</div>
