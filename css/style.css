@@ -944,7 +944,7 @@ a.more-btn-page.active + ul.subfilter{
 }
 
 .Microsite_Main_Page .breadcrumb-container{
-	background: #6e7f64;
+	background: #059F49;
 	border:none;
 	position: relative;
 }
@@ -2600,6 +2600,12 @@ section.inner-head h1 {
 	background: url(../img/bg-seperator.png) right no-repeat;
 	margin-left: 5px
 }
+
+span.seperator:before{
+	content: "\f0da";
+	font-family:FontAwesome;
+}
+
 .seperator.active {
 	width: 16px;
 	background: url(../img/bg-seperator-active.png) right no-repeat

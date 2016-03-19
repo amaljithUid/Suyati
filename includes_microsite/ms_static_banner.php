@@ -15,7 +15,6 @@
 								   <a href="<?php echo get_field('link_url',$banner->ID);?>"> <?php }?>
 								   <div class="banner-text">
 									    <h1 class=""><?php echo get_field('banner_text',$banner->ID);?></h1>
-									    
 								    </div>
 								   <?php if(get_field('link_url',$banner->ID)!=""){?>
 								   </a> <?php }?>
