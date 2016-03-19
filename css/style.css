@@ -8195,7 +8195,8 @@ ul#nav-bar-filter{
 }
 .social-links a.googleplus:hover {
     background-position: -92px -369px;
-
+}
+.search-box::-ms-clear { display: none; }
 /*-----edited--by --jasmin__end-----*/
 
 
