@@ -7313,6 +7313,13 @@ header .nav>li>a {
 }
 }
 @media (min-width:992px) {
+form#searchform button{
+	width: 40px;
+    height: 39px;
+    background: #fff;
+    border: none;
+}
+
 .social-links, .top-menu .top-nav {
 	float: right;
 	padding-right: 7px;
@@ -8088,6 +8095,8 @@ ul#nav-bar-filter{
 	display: inline-block;
 
 }
+
+
 
 .navbar-toggle{
 	margin: 0px;
