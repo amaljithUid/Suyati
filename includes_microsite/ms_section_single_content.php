@@ -7,7 +7,80 @@
 
 
 <div class="container">
-	<div class="col-md-3 microsite-testimonial">
+	
+	<div id="microsite-url-sections" class="col-md-9 col-xs-12 microsite-url-sections col-md-push-3">
+
+		<div class="microsite-url-container" style="display:none">
+			<h2 class="pagetitle">Technology</h2>
+			<?php $categories = get_terms( 'technology-type' );
+			/*print "<pre>";
+			print_r($categories);
+			print "</pre>";*/?>
+
+
+			<div class="twelve columns filter-wrapper">
+				<ul class="nav-bar-filter" id="nav-bar-filter">
+					<?php foreach($categories as $key => $data) { 
+				      global $post;
+	                  $post_name = $post->post_name;
+	                  if($data->slug == 'bigdata') {
+	                  	$microsite_url = 'technology';
+	                  }
+	                  elseif($data->slug == 'cloud') {
+	                  	$microsite_url = 'technology-cloud';	
+	                  }
+	                  elseif($data->slug == 'microsoft-technologies') {
+	                  	$microsite_url = 'technology-microsoft';	
+	                  }
+	                  elseif($data->slug == 'mobile') {
+	                  	$microsite_url = 'technology-mobile';	
+	                  }
+	                  elseif($data->slug == 'free-and-open-source-software') {
+	                  	$microsite_url = 'technology-open-source';	
+	                  }
+
+	                  $site_url = get_site_url();
+	                  $microsite_url_full = $site_url.'/'.$microsite_url;
+	                ?>
+
+					 <li data-id="<?php echo $data->slug;?>" class="type-links type-links<?php echo $key.' '.$data->slug;?>"><a href="<?php echo $microsite_url_full;?>"><?php echo $data->name;?></a></li>
+	        		
+	        		<?php }?>
+
+	            	</li>
+
+
+				</ul>
+				<ul id="more-nav" class="hidden-lg">
+			        <li>
+				        <a href="#" class="more-btn-page"><i class="fa fa-ellipsis-v"></i></a>
+			            <ul class="subfilter"></ul>
+			        </li>
+			    </ul>
+
+			</div>
+
+		</div>
+		
+		<div class="microsite-content-section">
+	
+
+			<div class="cms-row cms-wrapper">
+		        <?php global $post;?>
+		        <div class="cms-wrapper-title"><h2>
+		        <?php echo $post->post_title; ?>
+		        </h2></div>
+		        <div class="cms-wrapper-content text-wrapper">
+		        <?php echo get_field('block_1_content',$post->ID);?>
+		        </div> 
+	        </div>
+
+		</div>
+		
+
+	</div>
+		<div class="clear-xs"></div>
+	<div class="col-md-3 microsite-testimonial col-md-pull-9">
 		<div class="section-testimonial">
 			<h2>Our Work Their Voice</h2>
 			<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="7000">
@@ -75,19 +148,5 @@
 					</div>
 			</div>
 	</div>
-	<div id="microsite-url-sections" class="col-md-9 microsite-url-sections ms-single-post">
-		<div class="microsite-content-section">
-			<div class="cms-row cms-wrapper">
-		        <?php global $post;?>
-		        <div class="cms-wrapper-title"><h2>
-		        <?php echo $post->post_title; ?>
-		        </h2></div>
-		        <div class="cms-wrapper-content text-wrapper">
-		        <?php echo get_field('block_1_content',$post->ID);?>
-		        </div> 
-	        </div>
-		</div>
-
-
-	</div>
+	
 </div>

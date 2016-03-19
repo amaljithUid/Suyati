@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, h6{
 body p{
 	font-size: 15px;
 	line-height: 26px;
+	font-weight: 300;
 }
 
 /*body a{
@@ -762,7 +763,7 @@ ul#nav-bar-filter {
 }
 
 .Microsite_Main_Page .microsite-testimonial{
-	background: url(../img/bannerstrip.png) center bottom repeat-x #f1f1f1;
+	background: url(../img/bannerstrip.png) center bottom repeat-x #f0f0f0;
 	padding-bottom: 98px;
 }
 
@@ -783,6 +784,7 @@ ul#nav-bar-filter {
 	background: url(../img/bannerstrip.png) center repeat-x;
 	height: 187px;
 	z-index: 99;
+	display: none;
 }
 
 .microsite-testimonial h2{
@@ -837,7 +839,7 @@ ul#nav-bar-filter {
 	width: 220px;
 	background-color: #fff;
 	display: block;
-	top:-32px;
+	/*top:-32px;*/
 }
 
 .microsite-url-container h2.pagetitle{
@@ -859,7 +861,7 @@ ul#nav-bar-filter {
 
 .microsite-content-section.cms-row{
 	margin-right: 0px;
-	background: #f1f1f1;
+	background: #f0f0f0;
 	padding: 20px 32px 30px;
 	
 }
@@ -959,6 +961,18 @@ a.more-btn-page.active + ul.subfilter{
 
 .Microsite_Main_Page .breadcrumb-container .breadcrumb a.active{
 	color: #fff;
+}
+
+.breadcrumb-container{
+	background: #059F49;
+	border:none;
+	position: relative;
+}
+
+
+
+.single .microsite-content-section{
+	margin-left: 0px;
 }
 
 
@@ -2574,12 +2588,12 @@ body.inner-page.two {
 	/*font-family: 'Roboto', sans-serif;*/
 	font-size: 12px;
 	line-height: 12px;
-	color: #818181
+	color: #e5e5e5;
 }
 .breadcrumb a.active {
-	color: #1f5dbf;
-	padding-left: 4px
-}
+	color: #fff;
+/*	padding-left: 4px
+*/}
 .breadcrumb a>span {
 	position: absolute;
 	left: 0;
@@ -2889,7 +2903,7 @@ input.form-control, textarea.form-control {
 	background: url(../img/bg-about-us-banner.png) no-repeat;
 	background-size: cover;
 	position: relative;
-	border-bottom: #e9eced 3px solid
+	/*border-bottom: #e9eced 3px solid*/
 }
 .cms .head-banner {
 	height: 300px
@@ -4257,7 +4271,7 @@ section.intro .intro-wrapper {
 }
 .breadcrumb-container {
 	min-height: 33px;
-	border-bottom: #f0f0f0 3px double;
+	/*border-bottom: #f0f0f0 3px double;*/
 	padding-top: 9px
 }
 .time-line .timeline-block {
@@ -4608,7 +4622,7 @@ input.video-search {
 .cms-row a.cms-link {
 	display: block;
 	border-radius: 3px;
-	font-family: proxima_nova_rgregular;
+	/*font-family: proxima_nova_rgregular;*/
 	font-size: 15px;
 	line-height: 15px;
 	text-align: center;
@@ -5128,7 +5142,7 @@ input.video-search {
 	padding: 20px
 }
 .member-words .text-wrapper h4 {
-	font-family: open_sanssemibold;
+	/*font-family: open_sanssemibold;*/
 	font-size: 16px;
 	line-height: 16px;
 	color: #fff;
@@ -5195,7 +5209,7 @@ input.video-search {
 	display: block;
 	text-decoration: none;
 	padding: 11px 35px 11px 15px;
-	font-family: open_sanssemibold;
+	/*font-family: open_sanssemibold;*/
 	font-size: 14px;
 	line-height: 14px;
 	text-transform: uppercase;
@@ -5428,7 +5442,7 @@ input.video-search {
 	position: relative
 }
 .webinar-form .head h1 {
-	font-family: open_sanssemibold;
+	/*font-family: open_sanssemibold;*/
 	font-size: 24px;
 	line-height: 24px;
 	color: #fff
@@ -5447,7 +5461,7 @@ input.video-search {
 }
 .webinar-form label {
 	display: block;
-	font-family: open_sanssemibold;
+	/*font-family: open_sanssemibold;*/
 	font-size: 14px;
 	line-height: 14px;
 	color: #fff;
@@ -5837,7 +5851,7 @@ a:hover .element-animation {
 	padding: 19px
 }
 .featured-block h5 {
-	font-family: open_sanssemibold;
+	/*font-family: open_sanssemibold;*/
 	font-size: 15px;
 	line-height: 15px;
 	color: #494949;
@@ -6021,7 +6035,7 @@ a:hover .element-animation {
 .webinar-block .detail-sec>a {
 	display: block;
 	width: 61px;
-	font-family: open_sanssemibold;
+	/*font-family: open_sanssemibold;*/
 	font-size: 11px;
 	line-height: 11px;
 	color: #1b1b1b;
@@ -6090,7 +6104,7 @@ a:hover .element-animation {
 	margin-bottom: 24px
 }
 .casestudeis-listing a.casestudeis-link {
-	font-family: open_sanssemibold;
+	/*font-family: open_sanssemibold;*/
 	font-size: 13px;
 	line-height: 13px;
 	color: #fff;
@@ -6170,7 +6184,7 @@ a:hover .element-animation {
 	border-top: #05509d 1px solid
 }
 .big-form-wrapper label {
-	font-family: open_sanssemibold;
+	/*font-family: open_sanssemibold;*/
 	font-size: 14px;
 	line-height: 14px;
 	color: #fff;
@@ -6191,7 +6205,7 @@ a:hover .element-animation {
 	box-shadow: inset 4px 3px 9px 0 rgba(50,50,50,.2)
 }
 .big-form-wrapper .form-block h5 {
-	font-family: proxima_novalight;
+	/*font-family: proxima_novalight;*/
 	font-size: 30px;
 	line-height: 30px;
 	color: #fff;
@@ -6212,7 +6226,7 @@ a:hover .element-animation {
 	background: #00b858;
 	border: none;
 	text-transform: uppercase;
-	font-family: open_sanssemibold;
+	/*font-family: open_sanssemibold;*/
 	font-size: 19px;
 	line-height: 19px;
 	color: #fff;
@@ -6275,7 +6289,7 @@ a:hover .element-animation {
 	float: right
 }
 .date-column>.date span.num {
-	font-family: open_sanssemibold;
+	/*font-family: open_sanssemibold;*/
 	font-size: 61px;
 	line-height: 56px;
 	color: #282828;
@@ -6518,7 +6532,7 @@ a:hover .element-animation {
 }
 .blog-info .date-num {
 	font-size: 26px;
-	font-family: open_sanssemibold;
+	/*font-family: open_sanssemibold;*/
 	margin-right: 6px
 }
 .blog-info span.red {
@@ -6564,7 +6578,7 @@ a:hover .element-animation {
 	display: block
 }
 .speaker-avatar-wrapper h6, .speaker-avatar-wrapper span.designation {
-	font-family: open_sanssemibold;
+	/*font-family: open_sanssemibold;*/
 	font-size: 15px;
 	line-height: 15px;
 	color: #494949;
@@ -6603,7 +6617,7 @@ a:hover .element-animation {
 	border-bottom: #e6eaec 2px solid
 }
 .speaker-heading>h1 {
-	font-family: open_sanssemibold;
+	/*font-family: open_sanssemibold;*/
 	font-size: 18px;
 	line-height: 18px;
 	color: #494949
@@ -6654,7 +6668,7 @@ a:hover .element-animation {
 	margin-right: 20px
 }
 .comment-form-section label {
-	font-family: open_sanssemibold;
+	/*font-family: open_sanssemibold;*/
 	font-size: 14px;
 	line-height: 14px;
 	color: #616161;
@@ -8041,6 +8055,11 @@ ul.partners-tab li{
 
 @media (max-width:767px) {
 
+.clear-xs{
+	display: block;
+	clear: both;
+}
+
 ul#nav-bar-filter{
 	display: inline-block;
 }
@@ -8152,7 +8171,7 @@ ul#nav-bar-filter{
 }
 
 .microsite-content-section{
-	margin-top: 100px;
+	margin-top: 0px;
 }
 
 .text-wrapper{

@@ -5,6 +5,18 @@
 *********************************************************/
 ?>
 
+<div class="breadcrumb-container">
+			<div class="container">
+			  <div class="breadcrumb">
+                          <span class="seperator"></span> <?php if(function_exists('bcn_display'))
+                                {
+                                 bcn_display();
+                                 }?>
+		    </div>
+			</div>
+			
+		</div>
+
 
 <div class="container">
 	

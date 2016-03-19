@@ -7,7 +7,7 @@ Template Name:About Management Page static
 	  <!-- Inner head-->
    
     <section class="inner-page">
-	     <div class="head-banner management-team" style="display:none;">
+	     <div class="head-banner management-team">
 		  <?php
 									
 		  if ( have_posts() ) :
