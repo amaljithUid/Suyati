@@ -587,6 +587,7 @@ div.label-head {
 
 .banner-text{
 	position: relative;
+	z-index: 99;
 }
 
 .banner-block{
@@ -4519,7 +4520,7 @@ input.video-search {
 	display: block
 }
 .cms-row {
-	padding: 58px 0;
+	padding: 30px 0 0px;
 	/*border-bottom: #a6b39d 1px solid;*/
 	margin-right: 35px
 }
@@ -4574,7 +4575,7 @@ input.video-search {
 	border-radius: 20px;
 	background-color: #2aba63;
 	position: absolute;
-	top: 58px;
+	top: 30px;
 	left: -30px;
 }
 
@@ -8033,6 +8034,7 @@ ul.partners-tab li{
 /*partner page chenge*/
 .microsite-content-section.cms-row {
 	display:block;
+	min-height: 1000px;
 }
 
 
