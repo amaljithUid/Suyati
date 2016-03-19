@@ -43,14 +43,12 @@ textarea.form-control, input.form-control{margin-top:-5px;}
 img.wpcf7-form-control.wpcf7-captchac.wpcf7-captcha-captcha-908{margin-bottom:10px;}
     </style>
   <!-- Inner head-->
-   
+   hfsJDfglksjfdjkklg
     <section class="inner-page">
-	    <div class="head-banner advisory-board contact-page-banner">
-		     <?php							
-                          if ( have_posts() ) :
-                                 while ( have_posts() ) : the_post();$p_id = get_the_ID();?>
-                 <?php
-	      $args = array(
+	    <div class="head-banner">
+             <?php $p_id = get_the_ID();?>
+           <?php
+	    $args = array(
 	'numberposts' => 1,
 	'post_type' => 'inner-banner',
 	'meta_key' => 'post',
@@ -59,13 +57,8 @@ img.wpcf7-form-control.wpcf7-captchac.wpcf7-captcha-captcha-908{margin-bottom:10
 );
 $the_query = get_posts( $args );foreach($the_query as $qq){
 ?>
-<img src="<?php  echo get_field( "image", $qq->ID );?>" />
-<?php }?>
-				      <h1><?php the_title();?></span></h1>
-				<?php  endwhile;
-			 endif;
-			   ?>
-	    		
+<img src="<?php  echo get_field( "image", $qq->ID );?>" /><?php }?>
+		    <h1><?php the_title();?></h1>
 	    </div>
 		<div class="breadcrumb-container">
 			<div class="container">
