@@ -2927,6 +2927,7 @@ input.form-control, textarea.form-control {
 	padding-top: 226px !important;
 
 }
+.page-template-talent-page .head-banner>h1{padding-top: 150px !important;}
 .head-banner.advisory-board>h1 {
 	/*font-family: proxima_novasemibold;*/
 	font-size: 57px;
