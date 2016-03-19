@@ -8167,3 +8167,24 @@ ul#nav-bar-filter{
 
 }
 
+/*-----edited--by --jasmin-----*/
+
+.navbar-wrapper .social-links a{-webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;}
+    .social-links a.facebook:hover {
+    background-position: -1px -370px;
+}
+.social-links a.twitter:hover {
+    background-position: -33px -368px;
+}
+.social-links a.linkedin:hover {
+    background-position: -62px -370px;
+}
+.social-links a.googleplus:hover {
+    background-position: -92px -369px;
+
+/*-----edited--by --jasmin__end-----*/
+
+

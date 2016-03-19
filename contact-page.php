@@ -43,7 +43,7 @@ textarea.form-control, input.form-control{margin-top:-5px;}
 img.wpcf7-form-control.wpcf7-captchac.wpcf7-captcha-captcha-908{margin-bottom:10px;}
     </style>
   <!-- Inner head-->
-   hfsJDfglksjfdjkklg
+   
     <section class="inner-page">
 	    <div class="head-banner">
              <?php $p_id = get_the_ID();?>
