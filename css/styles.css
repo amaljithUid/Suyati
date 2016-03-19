@@ -1,0 +1,1751 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+/*font-family: 'Roboto', sans-serif;*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+/*font-family: 'Roboto Condensed', sans-serif;*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100);
+/*font-family: 'Roboto Slab', serif;*/
+/* ! normalize.css v1.0.0 | MIT License | git.io/normalize */
+/* ==========================================================================
+HTML5 display definitions
+========================================================================== */
+/*
+* Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+*/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block
+}
+/*
+* Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+*/
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+/*
+* Prevents modern browsers from displaying `audio` without controls.
+* Remove excess height in iOS 5 devices.
+*/
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+/*
+* Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3, * and Safari 4.
+* Known issue:no IE 6 support.
+*/
+
+[hidden] {
+    display: none
+}
+/* ==========================================================================
+Base
+========================================================================== */
+/*
+* 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+*    `em` units.
+* 2. Prevents iOS text size adjust after orientation change, without disabling
+*    user zoom.
+*/
+
+html {
+    font-size: 100%;
+    /* 1 */
+    
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+    
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+}
+/*
+* Addresses `font-family` inconsistency between `textarea` and other form
+* elements.
+*/
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+    font-family: 'Roboto', serif;
+}
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+/*
+* Addresses margins handled incorrectly in IE 6/7.
+*/
+
+body {
+    margin: 0;
+    font-family: 'Roboto', serif;
+}
+/*
+* Font Smoothing
+*/
+
+html,
+html a {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    -webkit-font-smoothing: antialiased;
+}
+/* ==========================================================================
+Links
+========================================================================== */
+/*
+* Addresses `outline` inconsistency between Chrome and other browsers.
+*/
+
+a:focus {
+    outline: thin dotted;
+    text-decoration: none;
+}
+/*
+* Improves readability when focused and also mouse hovered in all browsers.
+*/
+
+a:active,
+a:hover {
+    outline: 0;
+    text-decoration: none;
+}
+/* ==========================================================================
+Typography
+========================================================================== */
+/*
+* Addresses font sizes and margins set differently in IE 6/7.
+* Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5, * and Chrome.
+*/
+
+h1 {
+    margin: 0.67em 0;
+    font-size: 2em;
+}
+h2 {
+    margin: 0.83em 0;
+    font-size: 1.5em;
+}
+h3 {
+    margin: 1em 0;
+    font-size: 1.17em;
+}
+h4 {
+    margin: 1.33em 0;
+    font-size: 1em;
+}
+h5 {
+    margin: 1.67em 0;
+    font-size: 0.83em;
+}
+h6 {
+    margin: 2.33em 0;
+    font-size: 0.75em;
+}
+/*
+* Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+*/
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+/*
+* Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+*/
+
+b,
+strong {
+    font-weight: bold
+}
+blockquote {
+    margin: 0px
+}
+/*
+* Addresses styling not present in Safari 5 and Chrome.
+*/
+
+dfn {
+    font-style: italic
+}
+/*
+* Addresses styling not present in IE 6/7/8/9.
+*/
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+/*
+* Addresses margins set differently in IE 6/7.
+*/
+
+p,
+pre {
+    margin: 1em 0
+}
+/*
+* Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+*/
+
+code,
+kbd,
+pre,
+samp {
+    font-size: 1em;
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+}
+/*
+* Improves readability of pre-formatted text in all browsers.
+*/
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/*
+* Addresses CSS quotes not supported in IE 6/7.
+*/
+
+q {
+    quotes: none
+}
+/*
+* Addresses `quotes` property not supported in Safari 4.
+*/
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+small {
+    font-size: 75%
+}
+/*
+* Prevents `sub` and `sup` affecting `line-height` in all browsers.
+*/
+
+sub,
+sup {
+    position: relative;
+    vertical-align: baseline;
+    font-size: 75%;
+    line-height: 0;
+}
+sup {
+    top: -0.5em
+}
+sub {
+    bottom: -0.25em
+}
+/* ==========================================================================
+Lists
+========================================================================== */
+/*
+* Addresses margins set differently in IE 6/7.
+*/
+
+dl,
+menu,
+ol,
+ul {
+    margin: 1em 0
+}
+dd {
+    margin: 0 0 0 40px
+}
+/*
+* Addresses paddings set differently in IE 6/7.
+*/
+
+menu,
+ol,
+ul {
+    padding: 0
+}
+/*
+* Corrects list images handled incorrectly in IE 7.
+*/
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+/* ==========================================================================
+Embedded content
+========================================================================== */
+/*
+* 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+* 2. Improves image quality when scaled in IE 7.
+*/
+
+img {
+    border: 0;
+    /* 1 */
+    
+    -ms-interpolation-mode: bicubic;
+    /* 2 */
+    
+    max-width: 100%;
+}
+/*
+* Corrects overflow displayed oddly in IE 9.
+*/
+
+svg:not(:root) {
+    overflow: hidden
+}
+/* ==========================================================================
+Figures
+========================================================================== */
+/*
+* Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+*/
+
+figure {
+    margin: 0
+}
+/* ==========================================================================
+Forms
+========================================================================== */
+/*
+* Corrects margin displayed oddly in IE 6/7.
+*/
+
+form {
+    margin: 0
+}
+/*
+* Define consistent border, margin, and padding.
+*/
+
+fieldset {
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+    border: 1px solid #c0c0c0;
+}
+/*
+* 1. Corrects color not being inherited in IE 6/7/8/9.
+* 2. Corrects text not wrapping in Firefox 3.
+* 3. Corrects alignment displayed oddly in IE 6/7.
+*/
+
+legend {
+    padding: 0;
+    border: 0;
+    /* 1 */
+    
+    white-space: normal;
+    /* 2 */
+    
+    *margin-left: -7px;
+    /* 3 */
+}
+/*
+* 1. Corrects font size not being inherited in all browsers.
+* 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5, *    and Chrome.
+* 3. Improves appearance and consistency in all browsers.
+*/
+
+button,
+input,
+select,
+textarea {
+    margin: 0;
+    /* 2 */
+    
+    vertical-align: baseline;
+    /* 3 */
+    
+    font-size: 100%;
+    /* 1 */
+    
+    *vertical-align: middle;
+    /* 3 */
+}
+/*
+* Addresses Firefox 3+ setting `line-height` on `input` using ` !important` in
+* the UA stylesheet.
+*/
+
+button,
+input {
+    line-height: normal
+}
+/*
+* 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+*    and `video` controls.
+* 2. Corrects inability to style clickable `input` types in iOS.
+* 3. Improves usability and consistency of cursor style between image-type
+*    `input` and others.
+* 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+*    Known issue:inner spacing remains in IE 6.
+*/
+
+button,
+html input[type="button"],
+/* 1 */
+
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer;
+    /* 3 */
+    
+    -webkit-appearance: button;
+    /* 2 */
+    
+    *overflow: visible;
+    /* 4 */
+}
+/*
+* Re-set default cursor for disabled elements.
+*/
+
+button[disabled],
+input[disabled] {
+    cursor: default
+}
+/*
+* 1. Addresses box sizing set to content-box in IE 8/9.
+* 2. Removes excess padding in IE 8/9.
+* 3. Removes excess padding in IE 7.
+*    Known issue:excess padding remains in IE 6.
+*/
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    
+    padding: 0;
+    /* 2 */
+    
+    *height: 13px;
+    /* 3 */
+    
+    *width: 13px;
+    /* 3 */
+}
+/*
+* 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+* 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+*    (include `-moz` to future-proof).
+*/
+
+input[type="search"] {
+    /* 2 */
+    
+    box-sizing: content-box;
+    -webkit-appearance: textfield;
+    /* 1 */
+    
+    nowhitespace: afterproperty;
+}
+/*
+* Removes inner padding and search cancel button in Safari 5 and Chrome
+* on OS X.
+*/
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+/*
+* Removes inner padding and border in Firefox 3+.
+*/
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+/*
+* 1. Removes default vertical scrollbar in IE 6/7/8/9.
+* 2. Improves readability and alignment in all browsers.
+*/
+
+textarea {
+    overflow: auto;
+    /* 1 */
+    
+    vertical-align: top;
+    /* 2 */
+}
+input:focus,
+select:focus,
+textarea:focus,
+input:active,
+select:active,
+textarea:active {
+    outline: none
+}
+/* ==========================================================================
+Tables
+========================================================================== */
+/*
+* Remove most spacing between table cells.
+*/
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+/* ==========================================================================
+Global Styles
+========================================================================== */
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+a {
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-transition-property: color, border-color, background-color;
+    transition-property: color, border-color, background-color;
+}
+.nopadding {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+p {
+    font-size: 14px;
+    line-height: 25px;
+}
+a {
+    color: #868686
+}
+a:hover,
+a:focus {
+    color: #73d0da;
+    text-decoration: none;
+}
+.texture-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/grid.png);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800
+}
+/* ==========================================================================
+Buttons
+========================================================================== */
+
+.use-btn {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    padding: 20px 50px;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #4b98a9;
+    font-size: 16px;
+}
+.use-btn:hover,
+.use-btn:focus {
+    background-color: #73d0da;
+    color: #fff;
+    text-decoration: none;
+}
+.learn-btn,
+.download-btn {
+    display: inline-block;
+    padding: 18px 46px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 22px;
+}
+.banner-text .learn-btn {
+    margin-top: 20px;
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase
+}
+.learn-btn:hover,
+.download-btn:hover,
+.learn-btn:focus,
+.download-btn:focus {
+    border-color: #73d0da;
+    color: #73d0da;
+    text-decoration: none;
+}
+.read-more-btn {
+    display: inline-block;
+    color: #323a45;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.read-more-btn i,
+.download-btn i {
+    margin-left: 5px
+}
+.showcase .download-btn {
+    margin-top: 50px
+}
+.download .download-btn {
+    margin-top: 25px
+}
+/* ==========================================================================
+Navigation
+========================================================================== */
+
+.nav-toggle {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    z-index: 999999;
+    padding: 10px 35px 16px 0px;
+    cursor: pointer;
+}
+.nav-toggle:focus {
+    outline: none;
+}
+.nav-toggle span,
+.nav-toggle span:before,
+.nav-toggle span:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 5px;
+    border-radius: 1px;
+    background: #fff;
+    cursor: pointer;
+}
+.nav-toggle span:before {
+    top: -10px
+}
+.nav-toggle span:after {
+    bottom: -10px
+}
+.nav-toggle span,
+.nav-toggle span:before,
+.nav-toggle span:after {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.nav-toggle.active span {
+    background-color: transparent
+}
+.nav-toggle.active span:before,
+.nav-toggle.active span:after {
+    top: 0
+}
+.nav-toggle.active span:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.nav-toggle.active span:after {
+    top: 10px;
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+}
+.navicon {
+    position: relative;
+    height: 26px;
+}
+.navicon p {
+    margin: 1px 50px 0 0
+}
+.navicon-fixed {
+    position: fixed;
+    top: 59px;
+    right: 143px;
+}
+.social-links {
+    float: right
+}
+.social-links li {
+    float: left;
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.social-links a li {
+    color: #ffffff;
+    font-size: 20px;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    transition: color 0.2s;
+}
+.wpc-landing-page .social-links a li {
+    color: #ffffff;
+    font-size: 20px;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    transition: background 0.2s;
+    background: url('../img/social-icons.png') no-repeat;
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+}
+.social-links a li.fb {
+    background-position: left top;
+}
+.social-links a li.tw {
+    background-position: -53px top;
+}
+.social-links a li.li {
+    background-position: -107px top;
+}
+.social-links a li.gp {
+    background-position: right top;
+}
+.social-links a:hover li {
+    background: url('../img/social-icons.png') no-repeat;
+    background-position: left bottom;
+}
+.social-links a:hover li.fb {
+    background-position: left bottom;
+}
+.social-links a:hover li.tw {
+    background-position: -53px bottom;
+}
+.social-links a:hover li.li {
+    background-position: -107px bottom;
+}
+.social-links a:hover li.gp {
+    background-position: right bottom;
+}
+.social-links a li:hover {
+    text-decoration: none;
+    color: #F00;
+}
+/* ==========================================================================
+Hero
+========================================================================== */
+.hero-new {
+    position: relative;
+    padding: 60px 0 60px 0;
+    min-height: 800px;
+    background: rgb(40, 70, 102) url('../img/top-banner-new-1.jpg') no-repeat fixed;
+    background-size: cover;
+    color: #fff;
+}
+.hero-new .banner-new-title{
+    background: rgb(40, 70, 102) url('../img/yellow.png') repeat;
+    padding-top: 15px;
+}
+.hero {
+    position: relative;
+    padding: 60px 0 60px 0;
+    min-height: 800px;
+    background: rgb(40, 70, 102) url('../img/top-banner1.jpg') no-repeat fixed;
+    background-size: cover;
+    color: #fff;
+}
+.wpc-landing-page .hero {
+    position: relative;
+    padding: 60px 0 60px 0;
+    min-height: 800px;
+    background: rgb(40, 70, 102) url('../img/wpc-bannerimage.png') no-repeat fixed;
+    background-size: cover;
+    color: #fff;
+    /**background-size: 100% 100%;**/
+}
+.hero h1 {
+    margin: 200px 0 45px 0;
+    font-weight: 300;
+    font-size: 45px;
+}
+.hero h1 span {
+    display: inline-block;
+    color: #a1a9b0;
+}
+.banner-new-title{
+    color: #173657;
+}
+.banner-new-title .intro-heading{
+    font-weight: bold !important;
+    font-size: 50px !important;
+    text-transform: capitalize !important;
+}
+.banner-new-title .intro-lead-in{
+    margin-bottom: 55px !important;
+    font-size: 30px !important;
+}
+#home {
+    width: 100%;
+    height: 100%;
+}
+.hero {
+    width: 100%;
+    height: 100%;
+}
+header i {
+    margin-left: 5px
+}
+header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 22px;
+}
+.wpc-landing-page header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: 'Roboto', serif;
+    font-size: 36px;
+    font-style: normal;
+    line-height: 22px;
+    text-align: center;
+}
+.wpc-landing-page header .intro-text .intro-lead-offer {
+    margin-bottom: 25px;
+    font-family: 'Roboto', serif;
+    font-size: 30px;
+    font-style: normal;
+    line-height: 22px;
+    text-align: center;
+    font-weight: 100;
+}
+.wpc-landing-page header .intro-text .intro-lead-date {
+    margin-bottom: 25px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-style: normal;
+    line-height: 22px;
+    text-align: center;
+}
+.wpc-landing-page header .intro-text .intro-lead-date span {
+    display: inline-block;
+    height: 1px;
+    width: 30%;
+    background-color: #5c8484;
+    vertical-align: middle;
+    margin: 2%;
+}
+header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.wpc-landing-page header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    font-size: 72px;
+    font-weight: 100;
+    line-height: 50px;
+    text-align: center;
+}
+header .intro-text .btn-xl {
+    margin-top: 60px;
+    border-width: 2px
+}
+.banner-text {
+    padding: 200px 0
+}
+.right-arrow {
+    background: url('../img/right-arrow.png') no-repeat 7px -2px;
+    width: 50px;
+    height: 21px;
+    display: inline-block;
+}
+
+.wpc-landing-page header .intro-text .intro-heading, .wpc-landing-page header .intro-text .intro-lead-in, .wpc-landing-page header .intro-text .intro-lead-offer{
+
+    line-height: inherit;
+
+}
+
+/* ==========================================================================
+Video
+========================================================================== */
+
+section.video i {
+    margin-right: 10px;
+    color: #323a45;
+    vertical-align: middle;
+    font-size: 50px;
+    -webkit-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
+}
+section.video h1 {
+    font-weight: 400;
+    font-size: 20px;
+}
+section.video {
+    padding: 60px 0;
+    background-color: #f6f7f9;
+}
+section.video a {
+    color: #323a45
+}
+section.video a:hover,
+section.video a:focus {
+    color: #73d0da;
+    text-decoration: none;
+}
+section.video a:hover i,
+section.video a:focus i {
+    color: #73d0da
+}
+/* ==========================================================================
+Custom Slider Controls (Flickity)
+========================================================================== */
+
+.flickity-page-dots .dot {
+    width: 13px;
+    height: 13px;
+    opacity: 1;
+    background: transparent;
+    background: #b0b0b0;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+}
+.flickity-page-dots .dot.is-selected {
+    background: #000;
+}
+/* ==========================================================================
+Features Slider
+========================================================================== */
+
+.features-bg {
+    position: relative;
+    min-height: 300px;
+    background: url('../img/features-intro-01.jpg') no-repeat center center;
+    background-size: cover;
+}
+.features-img {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+}
+.features-slider {
+    position: relative;
+    padding: 50px 0 0;
+    height: 300px;
+    background-color: #fff;
+}
+.features-slider ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.features-slider ul li {
+    width: 100%;
+}
+.features-slider li h1 {
+    margin-bottom: 15px;
+    color: #000;
+    font-weight: 400;
+    font-size: 22px;
+}
+.features-slider li p {
+    color: #000;
+    font-size: 14px;
+}
+.features-intro-img {
+    position: relative
+}
+.slides li h1 {
+    margin: 0;
+    padding: 0;
+}
+.features-slider .flickity-page-dots {
+    text-align: center;
+    margin-top: 50px;
+    position: static;
+}
+.features-slider .flickity-page-dots .dot {
+    margin: 0 12px 0 0;
+}
+/* ==========================================================================
+Features List
+========================================================================== */
+
+.features-list {
+    padding: 130px 0
+}
+.features-list h1 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #24374b;
+    font-size: 20px;
+}
+.features-list p {
+    margin-bottom: 20px;
+    color: #778899;
+}
+.feature-content {
+    display: inline-block;
+    margin-left: 0;
+    width: 65%;
+}
+.feature-icon {
+    display: inline-block;
+    margin-right: 25px;
+    width: 90px;
+    height: 90px;
+    border: solid 2px #4e9ba3;
+    border-radius: 50%;
+    vertical-align: top;
+    text-align: center;
+    font-size: 25px;
+    line-height: 90px;
+}
+.feature-icon i {
+    color: #4e9ba3
+}
+/* ==========================================================================
+Blockquote
+========================================================================== */
+
+blockquote {
+    margin: 40px 0 0;
+    padding: 0;
+    border: none;
+}
+blockquote p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    vertical-align: top;
+    font-style: italic;
+}
+blockquote .avatar {
+    display: inline-block;
+    margin-right: 20px;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+    border-radius: 50%;
+    overflow: hidden;
+}
+blockquote .logo-quote {
+    display: inline-block;
+    margin: 0 0 0 90px;
+}
+/* ==========================================================================
+Showcase
+========================================================================== */
+
+.showcase {
+    background: url('../img/showcase-bg-fixed-01.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.showcase h1 {
+    margin: 0 0 20px 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+}
+.showcase p {
+    margin-bottom: 25px;
+    color: #fff;
+}
+.device {
+    position: absolute;
+    top: -60px;
+    left: 20%;
+    min-height: 676px;
+    width: 359px;
+    background: url('../img/iphone-skeleton.png') no-repeat center center;
+}
+.device-content {
+    position: absolute;
+    top: 115px;
+    left: 56px;
+    width: 247px;
+    height: 445px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.device-content img {
+    width: 247px;
+    height: 445px;
+}
+.showcase-wrap {
+    position: relative;
+    padding: 100px 0;
+    min-height: 600px;
+}
+.showcase-slider ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.showcase-slider .flickity-page-dots {
+    bottom: 20px;
+}
+/* ==========================================================================
+Screenshots Intro
+========================================================================== */
+
+.screenshots-intro {
+    padding: 170px 0 100px 0;
+    background-color: #f6f7f9;
+}
+.screenshots-intro h1 {
+    margin-bottom: 20px;
+    color: #24374b;
+    font-weight: 400;
+    font-size: 22px;
+}
+.screenshots-intro p {
+    margin-bottom: 25px;
+    color: #778899;
+}
+/* ==========================================================================
+Screenshots
+========================================================================== */
+
+.screenshots ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.screenshots ul li {
+    float: left;
+    min-height: 100%;
+    width: 50%;
+    background-color: #000;
+    list-style: none;
+}
+.wpc-landing-page .screenshots ul li {
+    width: 100%
+}
+.screenshots figure {
+    position: relative;
+    overflow: hidden;
+    max-height: 380px
+}
+.screenshots figure img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.screenshots figure:hover img,
+.screenshots figure:focus img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.screenshots figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25% 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e52522;
+    background-color: rgba(229, 37, 34, 0.86);
+    text-align: center;
+    font-size: 15px;
+    opacity: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.screenshots figcaption a {
+    color: #fff
+}
+.screenshots figcaption a:hover,
+.screenshots figcaption a:focus {
+    color: #73d0da
+}
+.screenshots figure:hover figcaption,
+.screenshots figure:focus figcaption {
+    opacity: 1
+}
+.visible {
+    opacity: 1
+}
+.screenshots figure.cs-hover figcaption {
+    opacity: 1
+}
+.screenshots figcaption i {
+    font-size: 35px
+}
+.screenshots figcaption p {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.screenshots figcaption .caption-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -100px;
+    width: 200px;
+    -webkit-transform: translate(0px, 15px);
+    -ms-transform: translate(0px, 15px);
+    transform: translate(0px, 15px);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.screenshots figure:hover figcaption .caption-content,
+.screenshots figure:focus figcaption .caption-content {
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+/* ==========================================================================
+achievments
+========================================================================== */
+
+.achievments {
+    padding: 100px 0
+}
+.achievments .intro h3 {
+    font-size: 20px;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+    font-weight: bold
+}
+.wpc-landing-page .achievments .intro h3 {
+    font-size: 40px;
+    margin-bottom: 45px;
+    color: #48595d
+}
+.wpc-landing-page .achievments .intro h3 span {
+    color: #09716b
+}
+.achievments .intro p {
+    font-size: 19px;
+    line-height: 33px;
+    color: #4C4C4C;
+}
+.wpc-landing-page .achievments .intro p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #4C4C4C;
+}
+.intro .inner {
+    /*padding: 0 30px 0 0;
+border-right: 1px solid #ddd;*/
+}
+/* ==========================================================================
+Meet us at CeBIT
+========================================================================== */
+
+section#meet-us-at-cebit, section#ask-suyati-how{
+    background: #eeeeee;
+    /* Old browsers */
+    
+    background: -moz-linear-gradient(top, #eeeeee 1%, #ffffff 100%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #eeeeee), color-stop(100%, #ffffff));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(top, #eeeeee 1%, #ffffff 100%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(top, #eeeeee 1%, #ffffff 100%);
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(top, #eeeeee 1%, #ffffff 100%);
+    /* IE10+ */
+    
+    background: linear-gradient(to bottom, #eeeeee 1%, #ffffff 100%);
+    /* W3C */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0);
+    /* IE6-9 */
+    
+    padding-bottom: 0;
+}
+section#ask-suyati-how fieldset,
+section#meet-us-at-cebit fieldset {
+    border: none
+}
+section#ask-suyati-how fieldset input,
+section#ask-suyati-how fieldset textarea,
+section#meet-us-at-cebit fieldset input,
+section#meet-us-at-cebit fieldset textarea
+ {
+    background: none;
+    display: block;
+    height: 50px;
+    width: 100%;
+    border: none;
+    text-indent: 10px
+}
+section#ask-suyati-how fieldset textarea,
+section#meet-us-at-cebit fieldset textarea {
+    color: #999;
+    min-height: 150px;
+    padding: 10px 0
+}
+.wpcf7-form-control-wrap {
+    border: 1px solid #BABABA;
+    display: block;
+    margin-bottom: 20px
+}
+section #ask-suyati-how fieldset input[type="submit"],
+section #meet-us-at-cebit fieldset input[type="submit"] {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    height: 60px;
+}
+.wpc-landing-page #ask-suyati-how fieldset input[type="submit"],
+.wpc-landing-page #meet-us-at-cebit fieldset input[type="submit"] {
+    background: #09716b url('../img/right-arrow.png') no-repeat 87% 28px;
+    color: #fff;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 100;
+    height: 77px;
+    font-family: 'Roboto Slab';
+    -webkit-transition: background-position .1s ease-in;
+    -moz-transition: background-position .1s ease-in;
+    -o-transition: background-position .1s ease-in;
+    transition: background-position .1s ease-in;
+}
+section#ask-suyati-how fieldset input[type="submit"]:hover,
+section#meet-us-at-cebit fieldset input[type="submit"]:hover {
+    background: #e52522
+}
+.wpc-landing-page section#ask-suyati-how fieldset input[type="submit"]:hover,
+.wpc-landing-page section#meet-us-at-cebit fieldset input[type="submit"]:hover {
+    background: #068B7C url('../img/right-arrow.png') no-repeat 90% 28px;
+}
+.bg-image {
+    background: url(../img/bg.png) no-repeat center top;
+    min-height: 400px;
+    width: 100%
+}
+/* ==========================================================================
+Hear it from client
+========================================================================== */
+
+blockquote p {
+    text-align: left
+}
+.features-slider li p span.name {
+    font-weight: bold;
+    font-size: 16px
+}
+.features-slider li p span.designation {
+    font-style: italic;
+    font-size: 12px
+}
+.features-slider li p.text:before {
+    content: '"';
+    font-family: 'Roboto Slab', serif;
+    color: #000;
+    font-size: 60px;
+    line-height: 20px;
+    position: absolute;
+    left: 0;
+    top: 20px
+}
+.features-slider li p.text {
+    padding-left: 25px;
+}
+.wpc-landing-page section#meet-us-at-cebit, .wpc-landing-page section#ask-suyati-how {
+    background: #f0f0f0;
+}
+/* ==========================================================================
+Cliet
+========================================================================== */
+
+section#client {
+    padding: 20px 0
+}
+/* ==========================================================================
+cebit map
+========================================================================== */
+
+.cebit-map {
+    position: relative;
+}
+#map-canvas {
+    width: 100%;
+    height: 400px;
+}
+.goodbye-message {
+    background: #F00;
+    background: rgba(255, 0, 0, 0.76);
+    position: absolute;
+    margin: auto;
+    float: none;
+    top: 0;
+    height: 100%;
+    left: 0;
+    right: 0;
+    display: tablel;
+    vertical-align: middle
+}
+.wpc-landing-page .goodbye-message {
+    background: #09716b;
+    background: rgba(0, 87, 79, 0.78);
+}
+.goodbye-message .inner {
+    display: table-cell;
+    vertical-align: middle;
+    height: 350px;
+}
+.goodbye-message h3 {
+    color: #fff;
+    padding: 15px;
+    font-size: 22px;
+}
+.wpc-landing-page .goodbye-message h3 {
+    color: #fff;
+    padding: 15px;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.goodbye-message p {
+    color: #fff;
+    padding: 0 15px
+}
+/* ==========================================================================
+Download Now
+========================================================================== */
+
+.download {
+    padding: 120px 0;
+    background-color: #3f6184;
+}
+.download h1 {
+    margin: 0 0 15px 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 40px;
+}
+/* ==========================================================================
+Footer
+========================================================================== */
+
+footer {
+    padding: 5px 0;
+    background: #000;
+}
+footer p {
+    color: #444;
+    font-size: 12px;
+    text-align: center;
+}
+footer ul {
+    margin-top: 30px
+}
+footer li {
+    float: left;
+    margin-right: 15%;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+footer li a {
+    color: #3f6184
+}
+footer li:last-child {
+    margin-right: 0
+}
+/* ==========================================================================
+Nav Overlay
+========================================================================== */
+/* Overlay style */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 82, 113, 0.95);
+}
+/* Menu style */
+
+.overlay nav {
+    position: relative;
+    top: 50%;
+    height: 60%;
+    text-align: center;
+    font-size: 54px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.overlay ul {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+.overlay ul li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+.overlay ul li:last-child {
+    margin-right: 0px
+}
+.overlay ul li i {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.overlay ul li a {
+    display: block;
+    padding: 50px 0;
+    min-width: 190px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    background-color: #345271;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+    border-color: #73d0da;
+    color: #73d0da;
+}
+/* Effects */
+
+.overlay-boxify {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+    transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.overlay-boxify.open {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+.overlay-boxify nav ul li {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -80px, 0);
+    transform: translate3d(0, -80px, 0);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.overlay-boxify.open nav ul:first-child li:first-child {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+.overlay-boxify.open nav ul:first-child li:nth-child(2) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+.overlay-boxify.open nav ul:nth-child(2) li:first-child {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+.overlay-boxify.open nav ul:nth-child(2) li:nth-child(2) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+.overlay-boxify.open nav ul li {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+/* ==========================================================================
+Alert
+========================================================================== */
+
+.screen-reader-response {
+    display: none !important
+}
+.wpcf7-not-valid-tip {
+    color: #F00 !important
+}
+.wpcf7-response-output.wpcf7-mail-sent-ok {
+    background: #090;
+    padding: 10px;
+    color: #fff;
+    margin: 0 20px
+}
+.wpcf7-response-output.wpcf7-validation-errors {
+    padding: 10px;
+    color: #fff;
+    background: #F00;
+    margin: 0 20px
+}
+/* ==========================================================================
+Waypoints
+========================================================================== */
+
+.wp1,
+.wp2,
+.wp3,
+.wp4,
+.wp5,
+.wp6 {
+    visibility: hidden
+}
+.bounceInLeft,
+.bounceInRight,
+.fadeInUp,
+.fadeInUpDelay,
+.fadeInDown,
+.fadeInUpD,
+.fadeInLeft,
+.fadeInRight,
+.bounceInDown {
+    visibility: visible
+}
+.delay-05s {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+.delay-1s {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.bg-light-gray {
+    padding: 100px 0;
+    background: #e9ebed
+}
+.wpc-landing-page .bg-light-gray {
+    background-color: #d5edf3
+}
+.bg-light-white {
+    padding: 100px 0;
+    background: #fff
+}
+h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+    color: #666;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    line-height: normal
+}
+section h2.section-heading span.black-clr {
+    border-top: 2px solid #e52522;
+    white-space: nowrap
+}
+.black-clr {
+    color: #000
+}
+section h2.section-heading {
+    color: #48595d
+}
+section h2.section-heading span.green-clr {
+    border-top: none;
+    white-space: nowrap
+}
+.green-clr {
+    color: #09716b
+}
+section h3.section-subheading {
+    text-transform: none;
+    font-family: 'Roboto', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 80%;
+    margin: 15px auto 60px;
+    color: #666;
+}
+.wpc-landing-page section h3.section-subheading {
+    text-transform: none;
+    font-family: 'Roboto', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    max-width: 80%;
+    margin: 15px auto 60px;
+    color: #666;
+}
+.partener-logo a {
+    float: left;
+    margin: 0px 12px;
+}
+@media (max-width: 767px) {
+    .goodbye-message {
+        position: relative
+    }
+    .bg-light-gray {
+        padding: 50px 0
+    }
+}
+@media (max-width: 580px) {
+    .clients {
+        text-align: center
+    }
+    .clients img {
+        display: inline-block !important
+    }
+}
+ ul.custom-list li{
+    background-color:#fff; 
+    line-height:25px; 
+    background-color: #fff; 
+    line-height: 30px; 
+    list-style: square; 
+    list-style-position: inside;
+}
+.custom-list-items{
+    margin: 20px 0;
+    border: 1px solid #BDD8D6;
+    border-radius: 10px;
+    padding: 15px 0;
+}
+.custom-list-items li {
+    line-height: 30px; 
+    font-weight: bold;
+}
+.btn-footer-link{
+    color: #fff;
+    background-color: #2787A9;
+    border-color: #2D94C0;
+    padding: 15px 20px;
+    width: 100%;
+    margin-top: 20px;
+}
