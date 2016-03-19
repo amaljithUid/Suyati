@@ -2913,6 +2913,7 @@ input.form-control, textarea.form-control {
 	text-transform: uppercase;
 	text-shadow: 0 0 15px #000;
 	padding-top: 226px !important;
+
 }
 .head-banner.advisory-board>h1 {
 	/*font-family: proxima_novasemibold;*/
@@ -7313,6 +7314,13 @@ header .nav>li>a {
 }
 }
 @media (min-width:992px) {
+form#searchform button{
+	width: 40px;
+    height: 39px;
+    background: #fff;
+    border: none;
+}
+
 .social-links, .top-menu .top-nav {
 	float: right;
 	padding-right: 7px;
@@ -8084,10 +8092,12 @@ ul#nav-bar-filter{
 }
 
 .seach-sm-device input{
-	width: 70%;
+	width: 79%;
 	display: inline-block;
 
 }
+
+
 
 .navbar-toggle{
 	margin: 0px;
