@@ -971,7 +971,10 @@ a.more-btn-page.active + ul.subfilter{
 
 
 
-.single .microsite-content-section{
+.single.single-technology .microsite-content-section{
+	margin-left: 0px;
+}
+.single.single-service .microsite-content-section{
 	margin-left: 0px;
 }
 
