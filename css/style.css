@@ -8241,6 +8241,7 @@ ul#nav-bar-filter{
 }
 .search-box::-ms-clear { display: none; }
 @media (max-width:767px){.microsite-content-section{ float: none; }}
+@media (max-width:991px){.microsite-content-section.cms-row{ margin-top: 150px; }}
 
 /*-----edited--by --jasmin__end-----*/
 
