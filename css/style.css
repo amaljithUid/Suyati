@@ -7443,6 +7443,7 @@ div.label-head {
     width: 100%;
     background-color: #fff;
     display: block;
+    position: relative;
 }
 
 .microsite-url-container ul li{
