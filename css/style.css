@@ -8240,6 +8240,8 @@ ul#nav-bar-filter{
     background-position: -92px -369px;
 }
 .search-box::-ms-clear { display: none; }
+@media (max-width:767px){.microsite-content-section{ float: none; }}
+
 /*-----edited--by --jasmin__end-----*/
 
 
