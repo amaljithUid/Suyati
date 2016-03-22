@@ -8247,6 +8247,7 @@ iframe.wp-embedded-content{ display: none; }
 
 .banner-text h1 { font-size: 25px; }
 .banner-block{margin-top:8px;}
+.page-template-contact-page .head-banner>h1, .page-template-about-page .head-banner>h1{ padding-top: 100px !important }
 
 }
 
