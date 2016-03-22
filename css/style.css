@@ -8241,7 +8241,11 @@ ul#nav-bar-filter{
     background-position: -92px -369px;
 }
 .search-box::-ms-clear { display: none; }
-@media (max-width:767px){iframe.wp-embedded-content{ display: none; }}
+@media (max-width:767px){iframe.wp-embedded-content{ display: none; }
+
+.banner-text h1 { font-size: 25px; }
+
+}
 
 
 /*-----edited--by --jasmin__end-----*/
